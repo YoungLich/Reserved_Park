@@ -1,0 +1,90 @@
+#reservas {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 950px;
+    /* Aumentar a largura para comportar a tabela */
+    background-color: #f9f9f9;
+    /* Adicionar um fundo claro para destacar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Adicionar uma sombra para destacar a seção */
+}
+
+/* Centralizar o título */
+#reserva {
+    font-size: 2rem;
+    /* Aumentar o tamanho da fonte do título */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para o filtro de reservas */
+.filtro-reservas {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#filtro,
+#data-filtro {
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+#filtrar-reservas {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#filtrar-reservas:hover {
+    background-color: #218838;
+}
+
+table {
+    width: 100%;
+    /* Agora a tabela ocupa toda a largura disponível */
+    margin: 0 auto;
+    /* Centralizar a tabela */
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #2d3e50;
+    color: #fff;
+    font-size: 1.2rem;
+    /* Aumentar o tamanho da fonte das cabeçalhos */
+}
+
+th,
+td {
+    padding: 15px;
+    /* Aumentar o espaçamento das células */
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+th {
+    font-weight: bold;
+    width: 250px;
+}
+
+tbody tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* Aumentar o tamanho das threads (cabeçalhos) */
+th {
+    font-size: 1.2rem;
+    /* Aumentar o tamanho do texto dos cabeçalhos */
+}
+
+td {
+    font-size: 1rem;
+    /* Tamanho padrão para o corpo da tabela */
+}

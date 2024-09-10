@@ -1,0 +1,46 @@
+<!-- dashboard.html -->
+<main class="dashboard">
+    <section class="dashboard-welcome">
+        <h1>Bem-vindo à Dashboard</h1>
+        <p>Este é o painel principal do sistema de gestão de estacionamento.</p>
+    </section>
+
+    <section class="dashboard-overview">
+        <!-- Div das vagas disponíveis -->
+        <div class="card vagas-disponiveis">
+            <h2>Vagas Disponíveis</h2>
+            <div class="vagas-container">
+                <p><span id="vagas-disponiveis">10</span> vagas disponíveis</p>
+                <p><a href="#" class="link" id="verificar-vagas-link">Verificar Vagas</a></p>
+            </div>
+        </div>
+
+        <!-- Div do saldo do dono do estacionamento -->
+        <div class="card saldo-dono">
+            <h2>Saldo Disponível</h2>
+            <div class="saldo-container">
+                <p>R$ <span id="saldo-disponivel">2.500,00</span></p>
+                <button id="sacar-saldo">Sacar</button>
+            </div>
+        </div>
+
+        <!-- Novo card: Solicitar Relatórios -->
+        <div class="card solicitar-relatorios">
+            <h2>Solicitar Relatórios</h2>
+            <div class="relatorios-container">
+                <p>Obtenha relatórios detalhados de ocupação e transações.</p>
+                <button id="solicitar-relatorios-btn">Solicitar Relatório</button>
+            </div>
+        </div>
+
+        <!-- Novo card: Configurações -->
+        <div class="card configuracoes">
+            <h2>Configurações</h2>
+            <div class="configuracoes-container">
+                <p>Personalize as configurações do sistema,<br>
+                    acessando o botão abaixo.</p>
+                <button id="configuracoes-btn">Acessar Configurações</button>
+            </div>
+        </div>
+    </section>
+</main>

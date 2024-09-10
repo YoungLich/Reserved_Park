@@ -1,0 +1,94 @@
+#configuracoes {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 1000px;
+    background-color: #f4f9ff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #cce7ff;
+}
+
+#configuracoes h1 {
+    font-size: 1.8rem;
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+.configuracao-container {
+    background-color: #e6f7ff;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #b3daff;
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    width: calc(50% - 20px);
+    /* Ajusta a largura para caber lado a lado */
+}
+
+.configuracao-container h2 {
+    font-size: 1.4rem;
+    color: #004080;
+    margin-bottom: 10px;
+}
+
+.configuracao-container label {
+    font-size: 1rem;
+    color: #333;
+    margin-right: 5px;
+}
+
+.configuracao-container input[type="text"],
+.configuracao-container input[type="checkbox"],
+.configuracao-container input[type="file"] {
+    padding: 6px;
+    margin-bottom: 10px;
+    width: calc(100% - 14px);
+    border: 1px solid #cce7ff;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.configuracao-container button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.configuracao-container button:hover {
+    background-color: #0056b3;
+}
+
+#container-tema {
+    width: 45%;
+    text-align: left;
+    margin-top: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#container-perfil {
+    margin-bottom: 15px;
+}
+
+#container-perfil input[type="file"] {
+    padding: 3px;
+    font-size: 0.9rem;
+}
+
+#container-perfil img {
+    display: block;
+    margin-top: 10px;
+    max-width: 80px;
+    border-radius: 50%;
+}

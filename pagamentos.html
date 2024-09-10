@@ -1,0 +1,61 @@
+<div id="pagamentos" class="content">
+    <h1 id="titulo-pagamentos">Pagamentos</h1>
+    <br>
+
+    <!-- Filtro para os pagamentos -->
+    <div class="filtro-pagamentos">
+        <label for="filtro-pagamento">Filtrar por:</label>
+        <select id="filtro-pagamento">
+            <option value="dia">Dia</option>
+            <option value="mes">Mês</option>
+            <option value="ano">Ano</option>
+        </select>
+        <input type="date" id="data-filtro-pagamento">
+        <button id="filtrar-pagamentos">Filtrar Pagamentos</button>
+    </div>
+
+    <br>
+
+    <!-- Tabela de Pagamentos -->
+    <table id="tabela-pagamentos">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>CPF</th>
+                <th>Forma de Pagamento</th>
+                <th>Data de Compra</th>
+                <th>Hora</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>João da Silva</td>
+                <td>joao@email.com</td>
+                <td>000000-00</td>
+                <td>Pix</td>
+                <td>2023-05-03</td>
+                <td>8:00</td>
+            </tr>
+            <tr>
+                <td>Maria Souza</td>
+                <td>maria@email.com</td>
+                <td>000000-00</td>
+                <td>Crédito</td>
+                <td>2023-05-04</td>
+                <td>7:00</td>
+            </tr>
+    </table>
+    </tbody>
+    </table>
+
+    <br>
+
+    <!-- Resumo de Pagamentos por Mês -->
+    <div id="resumo-pagamentos">
+        <h2>Resumo de Pagamentos Mensais</h2>
+        <ul id="lista-resumo-pagamentos">
+            <!-- Resumo dos pagamentos será inserido aqui -->
+        </ul>
+    </div>
+</div>

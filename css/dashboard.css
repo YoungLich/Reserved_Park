@@ -1,0 +1,101 @@
+main {
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+}
+
+/* Estilos para o Dashboard */
+.dashboard {
+    padding: 20px;
+}
+
+.dashboard-welcome {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+/* Usando CSS Grid para o layout dos cards */
+.dashboard-overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "vagas saldo"
+        "relatorios configuracoes";
+    grid-gap: 20px;
+    justify-content: center;
+    /* Centraliza a grade na tela */
+}
+
+/* Estilos para os cards do dashboard */
+.card {
+    background-color: #ffffff;
+    border: 1px solid orange;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 280px;
+    /* Ajuste de largura se necessário */
+    text-align: center;
+}
+
+/* Posicionamento específico de cada card */
+.vagas-disponiveis {
+    grid-area: vagas;
+    justify-self: end;
+    /* Move um pouco para a esquerda */
+}
+
+.saldo-dono {
+    grid-area: saldo;
+    justify-self: start;
+    /* Move um pouco para a direita */
+}
+
+.solicitar-relatorios {
+    grid-area: relatorios;
+    justify-self: end;
+    /* Alinha à esquerda na linha abaixo */
+}
+
+.configuracoes {
+    grid-area: configuracoes;
+    justify-self: start;
+    /* Alinha à direita na linha abaixo */
+}
+
+/* Estilos adicionais para títulos e conteúdo */
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.vagas-container p,
+.saldo-container p,
+.relatorios-container p,
+.configuracoes-container p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Estilos para botões */
+#sacar-saldo,
+#solicitar-relatorios-btn,
+#configuracoes-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#sacar-saldo:hover,
+#solicitar-relatorios-btn:hover,
+#configuracoes-btn:hover {
+    background-color: #218838;
+}

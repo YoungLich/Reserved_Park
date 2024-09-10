@@ -1,0 +1,96 @@
+#pagamentos {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 900px;
+    background-color: #e6f7ff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #b3daff;
+}
+
+#titulo-pagamentos {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #0066cc;
+}
+
+.filtro-pagamentos {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#filtro-pagamento,
+#data-filtro-pagamento {
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+#filtrar-pagamentos {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#filtrar-pagamentos:hover {
+    background-color: #218838;
+}
+
+table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+thead {
+    background-color: #004080;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f0faff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e0f5ff;
+}
+
+tbody tr:hover {
+    background-color: #cce7ff;
+}
+
+td {
+    font-size: 1rem;
+    color: #333;
+}
+
+#resumo-pagamentos {
+    margin-top: 30px;
+    background-color: #e0f5ff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#lista-resumo-pagamentos {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+    color: #0066cc;
+}

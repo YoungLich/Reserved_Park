@@ -1,0 +1,62 @@
+<div id="reservas" class="content">
+    <main id="reservas">
+        <h1 id="reserva">Reservas por Dia</h1>
+
+        <!-- Filtro de Reservas -->
+        <div class="filtro-reservas">
+            <label for="filtro">Filtrar por:</label>
+            <select id="filtro">
+                <option value="dia">Dia</option>
+                <option value="mes">Mês</option>
+                <option value="ano">Ano</option>
+            </select>
+            <input type="date" id="data-filtro" placeholder="Selecione a data">
+            <button id="filtrar-reservas">Filtrar Reservas</button>
+        </div>
+
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Data de Chegada</th>
+                    <th>Hora de Chegada</th>
+                    <th>Data de Partida</th>
+                    <th>Hora de Partida</th>
+                    <th>Vaga</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-reservas">
+                <!-- Linhas de reservas -->
+                <tr>
+                    <td>João da Silva</td>
+                    <td>joao@email.com</td>
+                    <td>2023-05-01</td>
+                    <td>10:00</td>
+                    <td>2023-05-03</td>
+                    <td>18:00</td>
+                    <td>1A</td>
+                </tr>
+                <tr>
+                    <td>Maria Souza</td>
+                    <td>maria@email.com</td>
+                    <td>2023-05-02</td>
+                    <td>08:00</td>
+                    <td>2023-05-04</td>
+                    <td>20:00</td>
+                    <td>1B</td>
+                </tr>
+                <tr>
+                    <td>Pedro Oliveira</td>
+                    <td>pedro@email.com</td>
+                    <td>2022-02-02</td>
+                    <td>08:00</td>
+                    <td>2022-02-03</td>
+                    <td>20:00</td>
+                    <td>4C</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</div>

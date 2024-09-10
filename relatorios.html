@@ -1,0 +1,42 @@
+<head>
+    <link rel="stylesheet" href="relatorios.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jspdf"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docx"></script>
+    <script src="https://cdn.jsdelivr.net/npm/file-saver"></script>
+</head>
+
+<body>
+    <div id="relatorios" class="content">
+        <center>
+            <h1>Relatórios</h1>
+        </center>
+
+        <div class="relatorio-resumo">
+            <h2>Resumo do Mês</h2>
+            <p>Entradas: <span id="entradas">100</span></p>
+            <p>Saídas: <span id="saidas">80</span></p>
+            <p>Pagamentos: R$ <span id="valor-pagamentos">10.000,00</span></p>
+        </div>
+
+        <div class="grafico-container">
+            <h3>Gráfico de Crescimento de Clientes</h3>
+            <canvas id="grafico-clientes"></canvas>
+        </div>
+
+        <div class="exportar-relatorios">
+            <h3>Exportar Relatórios</h3>
+            <label for="data-inicial">Data Inicial:</label>
+            <input type="date" id="data-inicial">
+            <label for="data-final">Data Final:</label>
+            <input type="date" id="data-final">
+            <br><br>
+            <button id="exportar-excel">Exportar para Excel</button>
+            <button id="exportar-pdf">Exportar para PDF</button>
+            <button id="exportar-docx">Exportar para DOCX</button>
+        </div>
+    </div>
+
+    <script src="js/relatorios.js"></script>
+</body>

@@ -1,0 +1,160 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+/* Container principal */
+#vagas {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 1200px;
+    /* Ajustado para 1200px */
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+.select {
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.select h1 {
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 120px;
+    border-radius: 10px;
+    width: 80%;
+    padding: 30px;
+}
+
+
+
+.exit:before {
+    left: 10px;
+}
+
+.exit:after {
+    right: 10px;
+}
+
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.seats {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.seat {
+    border: 10px solid blue;
+    display: flex;
+    flex: 0 0 14.28%;
+    padding: 5px;
+    position: relative;
+}
+
+.seat label {
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    line-height: 1.5rem;
+    padding: 4px 0;
+    background: #5bfc60;
+    border-radius: 5px;
+    color: black;
+}
+
+.seat label:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0px 2px green;
+}
+
+.seat:nth-child(3) {
+    margin-right: 14%;
+}
+
+.seat input[type=checkbox] {
+    position: absolute;
+}
+
+.seat input[type=checkbox]:checked+label {
+    background: #808080;
+}
+
+/*TELA VAGAS-PRA CIMA*/
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #0ea8a8;
+    color: #fff;
+}
+
+/*div sair-abaixo*/
+#alerta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#alerta button {
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid orange;
+    background-color: orange;
+    cursor: pointer;
+}
+
+/*div sair-acima*/
+
+
+.ponto {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+}
+
+.ponto-verde {
+    display: inline-block;
+    background-color: green;
+}
+
+.ponto-amarelo {
+    background-color: yellow;
+}
+
+.ponto-cinza {
+    background-color: gray;
+}
+
+.ponto-vermelho {
+    background-color: red;
+}
