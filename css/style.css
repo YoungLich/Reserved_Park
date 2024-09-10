@@ -8,7 +8,7 @@
 body {
   display: flex;
   min-height: 100vh;
-  background: rgb(198, 198, 216);
+  background: rgb(154, 154, 189);
   font-family: 'Lexend Deca', sans-serif;
 }
 
@@ -16,10 +16,10 @@ body {
 .navigation {
   position: relative;
   height: 1300px;
-  background: blue;
+  background: rgb(34, 34, 116);
   width: 70px;
-  box-shadow: 10px 0 0 orange;
-  border-left: 10px solid blue;
+  box-shadow: 10px 0 0 rgb(235, 87, 29);
+  border-left: 10px solid rgb(34, 34, 116);
   overflow: hidden;
   transition: 0.5s;
 }
@@ -78,7 +78,7 @@ body {
 }
 
 .navigation ul li.active {
-  background: orange;
+  background: rgb(235, 87, 29);
 }
 
 .navigation ul li.active a::before {
@@ -88,9 +88,9 @@ body {
   right: 0;
   width: 30px;
   height: 30px;
-  background: blue;
+  background: rgb(34, 34, 116);
   border-radius: 50%;
-  box-shadow: 15px 15px 0 orange;
+  box-shadow: 15px 15px 0 rgb(235, 87, 29);
 }
 
 .navigation ul li.active a::after {
@@ -100,9 +100,9 @@ body {
   right: 0;
   width: 30px;
   height: 30px;
-  background: blue;
+  background: rgb(34, 34, 116);
   border-radius: 50%;
-  box-shadow: 15px -15px 0 orange;
+  box-shadow: 15px -15px 0 rgb(235, 87, 29);
 }
 
 .user-profile {
@@ -115,8 +115,8 @@ body {
 
 .user-profile img {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   object-fit: cover;
   margin-bottom: 10px;
   border: 4px solid #fff8f8;

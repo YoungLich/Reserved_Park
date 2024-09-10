@@ -15,7 +15,19 @@ main {
 }
 
 .link {
+    margin-top: 25px;
+}
+
+#verificar-vagas-link {
+    font-size: 17px;
+    color: #333;
+    transition: 0.1s ease;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#verificar-vagas-link {
     text-decoration: none;
+    color: rgb(236, 232, 225);
 }
 
 /* Usando CSS Grid para o layout dos cards */
@@ -32,10 +44,10 @@ main {
 
 /* Estilos para os cards do dashboard */
 .card {
-    background-color: #ffffff;
-    border: 1px solid orange;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgb(34, 34, 116);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    box-shadow: 4px 3px 10px 1px rgb(196, 191, 189);
     padding: 20px;
     width: 280px;
     /* Ajuste de largura se necessário */
@@ -78,24 +90,27 @@ main {
 .relatorios-container p,
 .configuracoes-container p {
     font-size: 1.2rem;
-    color: #333;
+    color: #f8f3f3;
 }
 
 /* Estilos para botões */
 #sacar-saldo,
 #solicitar-relatorios-btn,
-#configuracoes-btn {
+#configuracoes-btn,
+#link {
     background-color: #28a745;
-    color: white;
+    color: rgb(255, 251, 251);
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
+    transition: 0.2s ease;
 }
 
 #sacar-saldo:hover,
 #solicitar-relatorios-btn:hover,
-#configuracoes-btn:hover {
-    background-color: #218838;
+#configuracoes-btn:hover,
+#link:hover {
+    background-color: #217733;
 }
