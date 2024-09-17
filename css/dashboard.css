@@ -1,12 +1,12 @@
 main {
     text-align: center;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 /* Estilos para o Dashboard */
 .dashboard {
-    padding: 20px;
+    padding: 10px;
 }
 
 .dashboard-welcome {
@@ -44,10 +44,10 @@ main {
 
 /* Estilos para os cards do dashboard */
 .card {
-    background-color: rgb(34, 34, 116);
+    background-color: rgb(17, 60, 109);
     border: 1px solid transparent;
-    border-radius: 8px;
-    box-shadow: 4px 3px 10px 1px rgb(196, 191, 189);
+    border-radius: 1%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .389);
     padding: 20px;
     width: 280px;
     /* Ajuste de largura se necessário */
@@ -113,4 +113,49 @@ main {
 #configuracoes-btn:hover,
 #link:hover {
     background-color: #217733;
+}
+
+/* Estilos para os novos cards do dashboard */
+.reservas-totais,
+.ocupacao-estacionamento,
+.receita-gerada,
+.estacionamentos-populares,
+.tempo-permanencia,
+.picos-ocupacao {
+    width: 280px;
+    margin: 20px auto;
+}
+
+#lista-populares {
+    list-style: none;
+    padding: 0;
+}
+
+#lista-populares li {
+    font-size: 1rem;
+    color: #f8f3f3;
+    margin: 5px 0;
+}
+
+/* Centralizar grid com 3 colunas */
+.dashboard-overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.card p {
+    font-size: 1.2rem;
+    color: #f8f3f3;
+}
+
+/* Adiciona uma altura mínima aos gráficos */
+canvas {
+    width: 100% !important;
+    /* Garante que o gráfico ocupe toda a largura do card */
+    height: 200px !important;
+    /* Altura fixa para os gráficos */
+    border-radius: 5px;
+    /* Arredonda os cantos dos gráficos */
 }
