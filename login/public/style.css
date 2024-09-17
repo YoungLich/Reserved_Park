@@ -1,0 +1,79 @@
+/* Estilo geral do body */
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, darkcyan, steelblue, lightblue);
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do título no canto superior esquerdo */
+header {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    background: linear-gradient(to bottom, blue, orange);
+    background-clip: text;
+    /* Padrão */
+    -webkit-background-clip: text;
+    /* WebKit (Chrome, Safari) */
+    color: transparent;
+    margin: 0;
+}
+
+
+/* Estilo do container de login */
+.login-container {
+    background: linear-gradient(to left, rgba(0, 0, 0, .389), rgb(88, 156, 211), rgb(88, 156, 211), rgba(0, 0, 0, .389));
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid orangered;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .389);
+    width: 400px;
+    /* Aumenta o tamanho do container */
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 60px;
+}
+
+label,
+input {
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+
+button:hover {
+    background-color: #225524;
+}
