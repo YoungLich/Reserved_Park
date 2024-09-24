@@ -19,7 +19,7 @@
     <link rel="stylesheet" type="text/css" href="css/configuracao.css">
 
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
-    <link rel="icon" type="icon/png" sizes="16x16" href="image/Photo.png">
+    <link rel="icon" type="icon/png" sizes="16x16" href="image/Logo.png">
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
@@ -29,7 +29,7 @@
         <div class="sidebar"></div>
         <div class="user-profile">
             <img src="image/user.webp" alt="Foto do usuário">
-            <h4>Usuário</h4>
+            <h4>Administrador</h4>
         </div>
         <ul class="lista">
             <li class="list active">
@@ -77,10 +77,10 @@
         </ul>
     </div>
 
-    <div id="alerta">
+    <div id="alerta" style="display: none;">
         <p>Você tem certeza que deseja sair?</p> <br>
         <button onclick="confirmado()">Sim</button>
-        <button id="botao2" onclick="cancelado()">Não</button>
+        <button onclick="cancelado()">Não</button>
     </div>
 
     <main id="content-area">
@@ -93,6 +93,8 @@
     <script src="js/pagamentos.js"></script>
     <script src="js/relatorios.js"></script>
     <script src="js/configuracao.js"></script>
+    <script src="js/dados_reservas.js"></script>
+
 </body>
 
 </html>

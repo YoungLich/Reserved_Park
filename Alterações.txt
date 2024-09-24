@@ -1,0 +1,10 @@
+Atualização Front-end 
+
+ Inicio
+ - Dashboard -  cancelamento e No shows (reservas canceladas e usuários que não compareceram)
+ - manutenção de estacionamento, Status de manutenção do estacionamento.
+
+ Relatórios:
+ - Monitoramento de incidentes no estacionamento.
+
+Excluir do Dashboard: Tempo médio de permanência, Picos de ocupação, Receita gerada, Estacionamentos Mais Populares
