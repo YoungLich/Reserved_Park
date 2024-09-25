@@ -84,21 +84,17 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // Função para mostrar o alerta
-  function mostrarAlerta() {
-    document.getElementById('alerta').style.display = 'block';
-  }
+function mostrarAlerta() {
+  document.getElementById("alerta").style.display = "block";
+}
 
-  // Função para confirmar a saída (Sim)
-  function confirmado() {
-    alert('Você saiu.'); // Mensagem de saída ou outra ação de logout
-    document.getElementById('alerta').style.display = 'none';  // Esconder o alerta
-    window.location.href = 'login.html';  // Redirecionar para a página de login ou qualquer outra ação de logout
-  }
+function confirmado() {
+  document.getElementById("alerta").style.display = "none";
+}
 
-  // Função para cancelar a saída (Não)
-  function cancelado() {
-    document.getElementById('alerta').style.display = 'none';  // Esconder o alerta
-  }
+function cancelado() {
+  document.getElementById("alerta").style.display = "none";
+}
 
   // Atribuir a função de mostrar o alerta ao clicar no botão "Sair"
   document.querySelector('.navigation a[onclick="mostrarAlerta()"]').addEventListener('click', mostrarAlerta);
