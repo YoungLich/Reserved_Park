@@ -45,6 +45,10 @@ body {
   border-bottom-left-radius: 20px;
 }
 
+.navigation ul li:hover {
+  background-color: rgb(185, 97, 62);
+}
+
 .navigation ul li a {
   position: relative;
   display: flex;
@@ -113,17 +117,39 @@ body {
   padding: 20px;
 }
 
+/* Adicionando transição suave para a imagem do usuário */
 .user-profile img {
   border-radius: 50%;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  /* Tamanho reduzido fora do hover */
+  height: 60px;
   object-fit: cover;
   margin-bottom: 10px;
   border: 4px solid #fff8f8;
+  transition: width 0.3s ease, height 0.3s ease;
+  /* Transição suave */
 }
 
+/* Ao passar o mouse na navegação */
+.navigation:hover .user-profile img {
+  width: 80px;
+  /* Tamanho normal ao hover */
+  height: 80px;
+}
+
+/* Estilizando o texto do nome do usuário */
 .user-profile h4 {
-  margin: 0;
+  font-size: 7px;
+  /* Tamanho reduzido fora do hover */
+  color: white;
+  transition: font-size 0.3s ease;
+  /* Transição suave */
+}
+
+/* Ao passar o mouse na navegação */
+.navigation:hover .user-profile h4 {
+  font-size: 14px;
+  /* Tamanho normal ao hover */
 }
 
 .container {

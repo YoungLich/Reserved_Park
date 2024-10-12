@@ -4,28 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Reserved Park</title>
-    <link rel="icon" href="Photo.png">
+    <link rel="icon" href="image/Logo.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Login</title>
 </head>
 
 <body>
-    <header>
-        <h1>Reserved Park</h1>
-    </header>
 
     <div class="login-container">
+        <img src="image/Reserverd.png" class="img2">
         <h2>Login</h2>
         <form action="/login" method="POST">
-            <label for="username">Usuário:</label>
-            <input type="text" id="username" name="usernameInput" required placeholder="Digite seu usuário"><br><br>
+            <label for="username"></label>
+            <input type="text" id="username" name="usernameInput" required placeholder="Digite seu e-mail"><br><br>
 
-            <label for="password">Senha:</label>
+            <label for="password"></label>
             <input type="password" id="password" name="passwordInput" required placeholder="Digite sua senha"><br><br>
 
             <button type="submit">Entrar</button>
         </form>
     </div>
+
+    <div class="contato">
+        <h1>Criar Conta</h1>
+        <img src="image/Wpp.png" class="img1">
+        <img src="image/Telegram.png" class="img1">
+        <p class="text">Entre em contato conosco</p>
+    </div>
+
 </body>
 
 </html>

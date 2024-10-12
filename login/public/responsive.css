@@ -1,0 +1,100 @@
+/* Estilos para telas entre 420px e 768px */
+@media (max-width: 768px) {
+
+    /* Ajuste do body */
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 20px;
+        height: auto;
+        /* Permite que o conteúdo ocupe toda a altura */
+    }
+
+    /* Centralizar o login container em telas menores */
+    .login-container {
+        width: 70%;
+        /* Ocupa 90% da largura da tela */
+        margin-left: 0;
+        /* Remove o deslocamento */
+        padding: 20px;
+        /* Reduz o padding para se ajustar melhor */
+    }
+
+    /* Ajustar o tamanho da imagem logo */
+    .img2 {
+        width: 100px;
+        /* Reduz o tamanho da logo em telas menores */
+        margin-left: 0;
+    }
+
+    /* Ajuste da div de contato */
+    .contato {
+        width: 90%;
+        /* Ocupa 90% da largura da tela */
+        margin: 20px 0;
+        /* Remove o deslocamento lateral e adiciona espaço entre os blocos */
+        padding: 10px;
+        border: none;
+        /* Remove a borda em telas pequenas */
+    }
+
+    /* Ajustar o tamanho das imagens de contato */
+    .img1 {
+        width: 50px;
+        /* Reduz o tamanho das imagens de contato */
+    }
+
+    /* Ajuste do texto de contato */
+    .text {
+        font-size: 16px;
+        /* Diminui o tamanho do texto de contato */
+    }
+}
+
+/* Estilos para telas menores que 420px */
+@media (max-width: 420px) {
+
+    /* Ajuste do body */
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 20px;
+        height: auto;
+    }
+
+    /* Centralizar o login container em telas muito pequenas */
+    .login-container {
+        width: 85%;
+        /* Ocupa quase toda a largura da tela */
+        margin-left: 0;
+        padding: 15px;
+        /* Ajusta o padding para telas menores */
+    }
+
+    /* Ajuste da imagem logo */
+    .img2 {
+        width: 80px;
+        /* Reduz ainda mais o tamanho da logo */
+        margin-left: 130px;
+    }
+
+    /* Ajuste da div de contato */
+    .contato {
+        width: 95%;
+        /* Ocupa quase toda a largura da tela */
+        margin: 20px 0;
+        padding: 5px;
+    }
+
+    /* Ajuste das imagens de contato */
+    .img1 {
+        width: 40px;
+        /* Reduz o tamanho das imagens de contato */
+    }
+
+    /* Ajuste do texto de contato */
+    .text {
+        font-size: 14px;
+        /* Diminui o tamanho do texto de contato */
+    }
+}
