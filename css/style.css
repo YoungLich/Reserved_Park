@@ -15,7 +15,7 @@ body {
 /* Navegação */
 .navigation {
   position: relative;
-  height: 1300px;
+  min-height: 100%;
   background: rgb(17, 60, 109);
   width: 70px;
   box-shadow: 10px 0 0 rgb(235, 87, 29);
@@ -54,7 +54,7 @@ body {
   display: flex;
   width: 100%;
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .navigation ul li a .icon {
