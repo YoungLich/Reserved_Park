@@ -12,6 +12,10 @@ body {
   font-family: 'Lexend Deca', sans-serif;
 }
 
+.nav {
+  position: fixed;
+}
+
 /* Navegação */
 .navigation {
   position: relative;
