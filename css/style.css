@@ -198,7 +198,6 @@ h3 {
   transform: translate(-50%, -50%);
   background-color: #112C6D;
   padding: 20px;
-  border: 2px solid #EB571D;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   z-index: 1000;
@@ -206,7 +205,7 @@ h3 {
 }
 
 #alerta p {
-  color: black;
+  color: whitesmoke;
   margin-bottom: 10px;
 }
 

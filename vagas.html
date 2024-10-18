@@ -5,21 +5,16 @@
         </div>
         <div class="ponto ponto-verde"></div>
         <span>Dísponivel</span>
-
         <div class="ponto ponto-vermelho"></div>
         <span>Vaga ocupada</span>
-
         <div class="ponto ponto-amarelo"></div>
         <span>Manutenção</span>
-
         <div class="ponto ponto-cinza"></div>
         <span>Vaga em escolha</span>
-
         <div>
             <h3>Numero de vagas :</h3>
         </div>
     </div>
-
     <br>
     <ol>
         <li>
@@ -303,38 +298,46 @@
             </ol>
         </li>
     </ol>
-
+    <br>
     <div class="container_statics">
-        <div class="statistics"></div>
-        <h2>Estatísticas de Vagas</h2>
-
-        <div class="stat">
-            <h3>Gestão de Espaço</h3>
-            <p id="num-vagas-disponiveis">Número de vagas disponíveis: <span>0</span></p>
-            <p id="localizacao-vagas">Localização das vagas: <span>----</span></p>
-        </div>
-
-        <div class="stat">
-            <h3>Tempo Médio de Permanência</h3>
-            <canvas id="tempo-medio"></canvas>
-        </div>
-
-        <div class="stat">
-            <h3>Taxa de Ocupação</h3>
-            <canvas id="taxa-ocupacao"></canvas>
-        </div>
-
-        <div class="stat">
-            <h3>Estacionamentos Mais Populares</h3>
-            <ul id="estacionamentos-populares">
-                <!-- Lista será preenchida dinamicamente -->
-            </ul>
-        </div>
-
-        <div class="stat">
-            <h3>Picos de Ocupação</h3>
-            <canvas id="picos-ocupacao"></canvas>
+        <div class="statistics">
+            <h2>Estatísticas de Vagas</h2>
+            <div class="stat">
+                <h3>Gestão de Espaço</h3>
+                <p id="num-vagas-disponiveis">Número de vagas disponíveis: <span>0</span></p>
+                <p id="localizacao-vagas">Localização das vagas: <span>----</span></p>
+                <div class="button-group">
+                    <button id="exportar-excel-gestao">Exportar para Excel</button>
+                    <button id="exportar-pdf-gestao">Exportar para PDF</button>
+                    <button id="exportar-docx-gestao">Exportar para DOCX</button>
+                </div>
+            </div>
+            <div class="stat">
+                <h3>Tempo Médio de Permanência</h3>
+                <canvas id="tempo-medio"></canvas>
+                <div class="button-group">
+                    <button id="exportar-excel-tempo">Exportar para Excel</button>
+                    <button id="exportar-pdf-tempo">Exportar para PDF</button>
+                    <button id="exportar-docx-tempo">Exportar para DOCX</button>
+                </div>
+            </div>
+            <div class="stat">
+                <h3>Taxa de Ocupação</h3>
+                <canvas id="taxa-ocupacao"></canvas>
+                <div class="button-group">
+                    <button id="exportar-excel-taxa">Exportar para Excel</button>
+                    <button id="exportar-pdf-taxa">Exportar para PDF</button>
+                    <button id="exportar-docx-taxa">Exportar para DOCX</button>
+                </div>
+            </div>
+            <div class="stat">
+                <h3>Picos de Ocupação</h3>
+                <canvas id="picos-ocupacao"></canvas>
+                <div class="button-group">
+                    <button id="exportar-excel-picos">Exportar para Excel</button>
+                    <button id="exportar-pdf-picos">Exportar para PDF</button>
+                    <button id="exportar-docx-picos">Exportar para DOCX</button>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-</div>

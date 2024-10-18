@@ -17,24 +17,27 @@ body {
     padding: 20px;
     border-radius: 12px;
     max-width: 1000px;
-    background-color: #f4f9ff;
+    background-color: #112C6D;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border: 1px solid #cce7ff;
+    border-top: 4px solid #EB571D;
+    border-bottom: 4px solid #EB571D;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 #vagas h1 {
-    font-size: 1.8rem;
-    color: #004080;
+    font-size: 2.2rem;
+    color: #EB571D;
     margin-bottom: 20px;
 }
 
 .plane {
     margin-bottom: 20px;
     padding: 15px;
-    background-color: #e6f7ff;
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    border: 1px solid #b3daff;
+    border: 1px solid #EB571D;
 }
 
 /* Título */
@@ -52,9 +55,10 @@ body {
     border-radius: 10px;
     width: 80%;
     padding: 30px;
+    background-color: #112C6D;
+    color: #FFFFFF;
+    border: 1px solid #EB571D;
 }
-
-
 
 .exit:before {
     left: 10px;
@@ -78,7 +82,7 @@ ol {
 }
 
 .seat {
-    border: 10px solid blue;
+    border: 10px solid #EB571D;
     display: flex;
     flex: 0 0 14.28%;
     padding: 5px;
@@ -96,12 +100,12 @@ ol {
     padding: 4px 0;
     background: #5bfc60;
     border-radius: 5px;
-    color: black;
+    color: #112C6D;
 }
 
 .seat label:hover {
     cursor: pointer;
-    box-shadow: 0 0 0px 2px green;
+    box-shadow: 0 0 0px 2px #EB571D;
 }
 
 .seat:nth-child(3) {
@@ -116,38 +120,51 @@ ol {
     background: #808080;
 }
 
-/*TELA VAGAS-PRA CIMA*/
-
+/* Tela Vagas - Botão */
 button {
     padding: 10px 15px;
     font-size: 16px;
     border-radius: 4px;
-    background-color: #0ea8a8;
+    background-color: #EB571D;
     color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-/*div sair-abaixo*/
+button:hover {
+    background-color: #C84918;
+}
+
+/* Div sair */
 #alerta {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
+    background: linear-gradient(to bottom, transparent, #24347e);
     padding: 30px;
-    border: 1px solid black;
+    border-top: 4px solid #EB571D;
+    border-right: 4px solid #EB571D;
     border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
 #alerta button {
-    margin-left: 20px;
+    margin-left: 30px;
     margin-right: 20px;
-    border: 1px solid orange;
-    background-color: orange;
+    gap: 5px;
+    border: 1px solid #C84918;
+    background-color: #C84918;
+    color: #fff;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
-/*div sair-acima*/
-
+#alerta button:hover {
+    background-color: #da622f;
+}
 
 .ponto {
     display: inline-block;
@@ -157,7 +174,6 @@ button {
 }
 
 .ponto-verde {
-    display: inline-block;
     background-color: green;
 }
 
@@ -174,13 +190,13 @@ button {
 }
 
 .stat {
-    background-color: #e6f7ff;
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 15px;
     margin: 10px;
     border-radius: 8px;
     margin-bottom: 20px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    border: 1px solid #b3daff;
+    border: 1px solid #EB571D;
     text-align: left;
     display: inline-block;
     vertical-align: top;
@@ -189,13 +205,15 @@ button {
 
 .stat h3 {
     font-size: 1.4rem;
-    color: #004080;
+    color: #EB571D;
     margin-bottom: 10px;
+    margin: auto;
+    text-align: center;
 }
 
 .stat p {
     font-size: 1rem;
-    color: #333;
+    color: #FFFFFF;
 }
 
 .stat canvas {
@@ -210,7 +228,7 @@ button {
 
 #estacionamentos-populares li {
     padding: 5px 0;
-    border-bottom: 1px solid #cce7ff;
+    border-bottom: 1px solid #EB571D;
 }
 
 #estacionamentos-populares li:last-child {
