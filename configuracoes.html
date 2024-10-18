@@ -33,12 +33,34 @@
             <label for="foto-perfil">Foto de Perfil:</label>
             <input type="file" id="foto-perfil" accept="image/*">
             <br>
-            <button id="salvar-perfil">Salvar Perfil</button>
         </div>
 
-        <!-- Configuração de Tema -->
-        <label for="tema">Mudar Tema do Site:</label>
-        <input type="checkbox" id="tema" name="tema">
-        <span>Ativar/Desativar tema escuro</span>
+        <!-- Seletor de Tema -->
+        <div class="configuracao-container">
+            <h2>Selecionar Tema</h2>
+            <select id="tema-selector">
+                <option value="claro">Tema Claro</option>
+                <option value="escuro">Tema Escuro</option>
+            </select>
+        </div>
+        <button id="salvar-perfil">Salvar Perfil</button>
+    </div>
+
+    <!-- Card para selecionar vagas de estacionamento -->
+    <div id="container-vagas" class="configuracao-container">
+        <h2>Configuração de Vagas</h2>
+        <label for="estacionamento">Selecione o Estacionamento:</label>
+        <select id="estacionamento">
+            <option value="tatuape">Tatuapé</option>
+            <option value="aricanduva">Aricanduva</option>
+            <option value="analia_franco">Anália Franco</option>
+            <option value="vila_ema">Vila Ema</option>
+            <option value="novo_estacionamento">Adicionar Novo Estacionamento</option>
+        </select>
+        <br>
+        <label for="quantidade-vagas">Quantidade de Vagas:</label>
+        <input type="number" id="quantidade-vagas" min="1" placeholder="Digite a quantidade de vagas">
+        <br>
+        <button id="salvar-vagas">Salvar Vagas</button>
     </div>
 </div>

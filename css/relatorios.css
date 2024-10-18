@@ -13,34 +13,27 @@ body {
     text-align: center;
     margin: 0 auto;
     margin-top: 40px;
-    margin-bottom: 30px;
     padding: 20px;
     border-radius: 12px;
     max-width: 1000px;
-    /* Diminuindo a largura do container */
     background-color: #112C6D;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border: 4px solid #EB571D;
+    border-top: 4px solid #EB571D;
+    border-bottom: 4px solid #EB571D;
+    margin-bottom: 20px;
 }
 
 #relatorios h1 {
     font-size: 2.2rem;
-    color: #EB571D;
+    color: #df7045;
     margin-bottom: 25px;
-}
-
-.text-relatories {
-    text-align: center;
-    margin: auto;
 }
 
 .card-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    /* Adicionando espaço entre os cards */
     justify-content: center;
-    /* Centralizando os cards */
 }
 
 .card {
@@ -48,15 +41,13 @@ body {
     border: 2px solid #EB571D;
     border-radius: 8px;
     padding: 20px;
-    margin-bottom: 20px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
     width: 45%;
-    /* Diminuindo o tamanho dos cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     box-sizing: border-box;
-    /* Garantir que o padding não afete a largura total */
-    height: auto;
-    /* Ajustando a altura dos cards */
+    min-height: 420px;
 }
 
 .card h2,
@@ -64,58 +55,72 @@ body {
     font-size: 1.8rem;
     color: #FFFFFF;
     margin-bottom: 15px;
-    text-align: center;
 }
 
-.card p,
-.card span {
-    font-size: 1.1rem;
-    color: #FFFFFF;
-    margin: 10px 0;
-    text-align: center;
-}
-
+/* Alinhamento centralizado dos inputs de data e labels */
 .card .date-filter {
     display: flex;
     justify-content: center;
+    /* Centraliza os elementos */
     align-items: center;
-    margin-bottom: 15px;
-    flex-direction: row;
-    /* Adicionando os filtros de data lado a lado */
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    /* Permite que os inputs fiquem organizados em telas menores */
 }
 
 .card .date-filter label {
-    margin-right: 10px;
     font-size: 1rem;
     color: #FFFFFF;
+    margin-right: 5px;
+    /* Um pequeno espaço entre o label e o input */
+    text-align: left;
+    /* Alinha o texto à esquerda */
+    min-width: 80px;
+    /* Define um tamanho mínimo para os labels ficarem uniformes */
 }
 
 .card .date-filter input[type="date"] {
     padding: 8px;
-    margin-right: 10px;
     border: 1px solid #cce7ff;
     border-radius: 5px;
     font-size: 1rem;
     color: #333;
+    text-align: center;
+    width: 160px;
+    /* Define uma largura fixa para os inputs de data */
+}
+
+.card .content-space {
+    flex-grow: 1;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 40px;
+    height: 180px;
 }
 
 .card .button-group {
     display: flex;
     justify-content: center;
     gap: 10px;
-    /* Espaçamento entre os botões */
+    margin-top: 20px;
 }
 
 .card button {
     background-color: #EB571D;
     color: #FFFFFF;
     border: none;
+    padding: 8px 15px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1.1rem;
     transition: background-color 0.3s;
-    margin-top: 20px;
-    /* Adicionando margem superior para espaçamento */
 }
 
 .card button:hover {

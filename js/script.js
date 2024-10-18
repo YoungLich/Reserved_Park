@@ -1,10 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
   const links = document.querySelectorAll('.navigation a');
   const contentArea = document.getElementById('content-area');
-
   let vagas = 10; // Exemplo de número de vagas disponíveis inicialmente.
 
-  // Função para carregar a página
+  // Função para carregar a página 
   function loadPage(targetFile) {
     fetch(targetFile)
       .then(response => {
@@ -15,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
       })
       .then(html => {
         contentArea.innerHTML = html;
-
         // Se o dashboard foi carregado, atualizar a quantidade de vagas
         if (targetFile === 'dashboard.html') {
           updateVagas();
@@ -48,13 +46,10 @@ document.addEventListener('DOMContentLoaded', function () {
   links.forEach(link => {
     link.addEventListener('click', function (e) {
       e.preventDefault();
-
       // Remover a classe "active" de todos os itens da lista
       links.forEach(l => l.parentElement.classList.remove('active'));
-
       // Adicionar a classe "active" ao item clicado
       this.parentElement.classList.add('active');
-
       // Carregar o conteúdo do arquivo HTML correspondente
       const targetFile = this.getAttribute('data-target');
       if (targetFile) {
@@ -63,40 +58,26 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  document.querySelectorAll('.seat input[type="checkbox"]').forEach(function (checkbox) {
-    checkbox.addEventListener('change', function () {
-      const status = checkbox.getAttribute('data-status');
-      if (checkbox.checked) {
-        if (status === 'available') {
-          checkbox.nextElementSibling.style.backgroundColor = 'green';
-        } else if (status === 'occupied') {
-          checkbox.nextElementSibling.style.backgroundColor = 'red';
-        } else if (status === 'maintenance') {
-          checkbox.nextElementSibling.style.backgroundColor = 'yellow';
-        } else {
-          checkbox.nextElementSibling.style.backgroundColor = 'gray';
-        }
-      } else {
-        // Reseta a cor ao estado original
-        checkbox.nextElementSibling.style.backgroundColor = '';
-      }
-    });
-  });
-
   // Função para mostrar o alerta
-function mostrarAlerta() {
-  document.getElementById("alerta").style.display = "block";
-}
+  function mostrarAlerta() {
+    document.getElementById("alerta").style.display = "block";
+  }
 
-function confirmado() {
-  document.getElementById("alerta").style.display = "none";
-}
+  // Função de confirmação de saída
+  function confirmado() {
+    document.getElementById("alerta").style.display = "none";
+    // Aqui você pode adicionar qualquer lógica adicional para quando o usuário confirma a saída
+  }
 
-function cancelado() {
-  document.getElementById("alerta").style.display = "none";
-}
+  // Função de cancelamento de saída
+  function cancelado() {
+    document.getElementById("alerta").style.display = "none";
+  }
 
   // Atribuir a função de mostrar o alerta ao clicar no botão "Sair"
   document.querySelector('.navigation a[onclick="mostrarAlerta()"]').addEventListener('click', mostrarAlerta);
 
+  // Atribuir as funções de confirmação e cancelamento aos botões
+  document.querySelector('#alerta button[onclick="confirmado()"]').addEventListener('click', confirmado);
+  document.querySelector('#alerta button[onclick="cancelado()"]').addEventListener('click', cancelado);
 });

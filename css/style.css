@@ -17,7 +17,7 @@ body {
   position: relative;
   min-height: 100%;
   background: rgb(17, 60, 109);
-  width: 70px;
+  width: 80px;
   box-shadow: 10px 0 0 rgb(235, 87, 29);
   border-left: 10px solid rgb(17, 60, 109);
   overflow: hidden;
@@ -115,6 +115,7 @@ body {
   justify-content: center;
   flex-direction: column;
   padding: 20px;
+  margin-left: -4px;
 }
 
 /* Adicionando transição suave para a imagem do usuário */
@@ -191,14 +192,32 @@ h3 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
-  padding: 30px;
-  border: 1px solid black;
-  border-radius: 10px;
+  background-color: #112C6D;
+  padding: 20px;
+  border: 2px solid #EB571D;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   /* Garantir que o alerta apareça sobre outros elementos */
 }
 
+#alerta p {
+  color: black;
+  margin-bottom: 10px;
+}
+
 #alerta button {
-  margin: 5px;
+  background-color: #EB571D;
+  color: #FFFFFF;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+  margin-left: 8px;
+}
+
+#alerta button:hover {
+  background-color: #C84918;
 }
