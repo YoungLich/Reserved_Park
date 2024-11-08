@@ -2,7 +2,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #112C6D;
+    background-color: #98a7c7;
     color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
@@ -125,4 +125,8 @@ body {
 
 .card button:hover {
     background-color: #C84918;
+}
+
+.grafic {
+    margin-top: -20px;
 }
