@@ -82,11 +82,39 @@ ol {
 }
 
 .seat {
-    border: 10px solid #EB571D;
+    border: 10px solid #fa9a74;
     display: flex;
     flex: 0 0 14.28%;
     padding: 5px;
     position: relative;
+}
+
+#seat2 label {
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    line-height: 1.5rem;
+    padding: 4px 0;
+    background: #d2e711;
+    border-radius: 5px;
+    color: #112C6D;
+}
+
+#seat1 label {
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    line-height: 1.5rem;
+    padding: 4px 0;
+    background: #dd2121;
+    border-radius: 5px;
+    color: #112C6D;
 }
 
 .seat label {
